@@ -24,5 +24,17 @@ extension Note {
 }
 
 extension Note : Identifiable {
-
+    func updateNote(newTitle: String, newText: String){
+        self.title = newTitle
+        self.text = newText
+        self.date = Date()
+        
+       try? managedObjectContext?.save()
+    }
+    
+    func deleteNote(){
+        managedObjectContext?.delete(self)
+        try? managedObjectContext?.save()
+    }
 }
+

@@ -17,6 +17,10 @@
 		3DCBA71A2C680BDE0071ABC7 /* NotesThoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBA7192C680BDE0071ABC7 /* NotesThoTests.swift */; };
 		3DCBA7242C680BDE0071ABC7 /* NotesThoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBA7232C680BDE0071ABC7 /* NotesThoUITests.swift */; };
 		3DCBA7262C680BDE0071ABC7 /* NotesThoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBA7252C680BDE0071ABC7 /* NotesThoUITestsLaunchTests.swift */; };
+		3DCBA7342C680CE70071ABC7 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBA7322C680CE70071ABC7 /* Note+CoreDataClass.swift */; };
+		3DCBA7352C680CE70071ABC7 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBA7332C680CE70071ABC7 /* Note+CoreDataProperties.swift */; };
+		3DCBA7382C680E240071ABC7 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBA7372C680E240071ABC7 /* CoreManager.swift */; };
+		3DCBA73A2C6810070071ABC7 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCBA7392C6810070071ABC7 /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		3DCBA71F2C680BDE0071ABC7 /* NotesThoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotesThoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DCBA7232C680BDE0071ABC7 /* NotesThoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesThoUITests.swift; sourceTree = "<group>"; };
 		3DCBA7252C680BDE0071ABC7 /* NotesThoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesThoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DCBA7322C680CE70071ABC7 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
+		3DCBA7332C680CE70071ABC7 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3DCBA7372C680E240071ABC7 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
+		3DCBA7392C6810070071ABC7 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		3DCBA6F32C680BDC0071ABC7 = {
 			isa = PBXGroup;
 			children = (
+				3DCBA7372C680E240071ABC7 /* CoreManager.swift */,
 				3DCBA6FE2C680BDD0071ABC7 /* NotesTho */,
 				3DCBA7182C680BDE0071ABC7 /* NotesThoTests */,
 				3DCBA7222C680BDE0071ABC7 /* NotesThoUITests */,
@@ -101,6 +110,7 @@
 		3DCBA6FE2C680BDD0071ABC7 /* NotesTho */ = {
 			isa = PBXGroup;
 			children = (
+				3DCBA7362C680D740071ABC7 /* noteDB */,
 				3DCBA6FF2C680BDD0071ABC7 /* AppDelegate.swift */,
 				3DCBA7012C680BDD0071ABC7 /* SceneDelegate.swift */,
 				3DCBA7032C680BDD0071ABC7 /* ViewController.swift */,
@@ -109,6 +119,7 @@
 				3DCBA70D2C680BDE0071ABC7 /* LaunchScreen.storyboard */,
 				3DCBA7102C680BDE0071ABC7 /* Info.plist */,
 				3DCBA7082C680BDD0071ABC7 /* NotesTho.xcdatamodeld */,
+				3DCBA7392C6810070071ABC7 /* AddViewController.swift */,
 			);
 			path = NotesTho;
 			sourceTree = "<group>";
@@ -128,6 +139,15 @@
 				3DCBA7252C680BDE0071ABC7 /* NotesThoUITestsLaunchTests.swift */,
 			);
 			path = NotesThoUITests;
+			sourceTree = "<group>";
+		};
+		3DCBA7362C680D740071ABC7 /* noteDB */ = {
+			isa = PBXGroup;
+			children = (
+				3DCBA7322C680CE70071ABC7 /* Note+CoreDataClass.swift */,
+				3DCBA7332C680CE70071ABC7 /* Note+CoreDataProperties.swift */,
+			);
+			path = noteDB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DCBA7382C680E240071ABC7 /* CoreManager.swift in Sources */,
 				3DCBA7042C680BDD0071ABC7 /* ViewController.swift in Sources */,
+				3DCBA73A2C6810070071ABC7 /* AddViewController.swift in Sources */,
+				3DCBA7342C680CE70071ABC7 /* Note+CoreDataClass.swift in Sources */,
+				3DCBA7352C680CE70071ABC7 /* Note+CoreDataProperties.swift in Sources */,
 				3DCBA70A2C680BDD0071ABC7 /* NotesTho.xcdatamodeld in Sources */,
 				3DCBA7002C680BDD0071ABC7 /* AppDelegate.swift in Sources */,
 				3DCBA7022C680BDD0071ABC7 /* SceneDelegate.swift in Sources */,
